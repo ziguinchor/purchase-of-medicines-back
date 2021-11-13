@@ -29,7 +29,7 @@ app.use(express.json())
 app.use(bodyParser())
 app.use('/api/auth', authRouter)
 app.use('/api/users', userRoute)
-app.use('/api/medicine', bookRoute)
+app.use('/api/medicine', mediciceRouter)
 
 
 

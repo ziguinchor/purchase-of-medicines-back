@@ -5,7 +5,6 @@ const medicneSchema = new Schema({
     title: {
         type: String,
         required: true,
-        unique: true,
         trim: true,
         lowercase: true
     },
@@ -15,10 +14,10 @@ const medicneSchema = new Schema({
         lowercase: true,
         min: [10, 'Minimum length is 10 characters']
     },
-    avatar: {
+    image: {
         type: Buffer,
     },
-    amount: {
+    quantity: {
         type: Number,
         required: true
     },
@@ -26,6 +25,12 @@ const medicneSchema = new Schema({
         type: Number,
         required: true
     },
+    companyName: {
+        type:String
+    },
+    exData: {
+        type: String
+    }
 }, {
     timestamps: true
 })
